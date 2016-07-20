@@ -16,7 +16,7 @@ fn main() {
 
 
 fn summe<T: Add + Mul + Copy>(a: T, b: T) -> (<T as Add>::Output, <T as Mul>::Output) {
-    ((a + b), (a * b))
+    (a + b, a * b)
 }
 
 struct Swagger<T> {
